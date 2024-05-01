@@ -18,6 +18,9 @@ public class Program2 {
 		Department dep = departmentDao.findById(1);
 		System.out.println(dep);
 
+		System.out.println("=== TEST 2: findAll =======");
+		
+		System.out.println(departmentDao.findAll());
 	}
 
 }

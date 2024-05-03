@@ -30,6 +30,12 @@ public class Program2 {
 		dep2.setName("Instruments");
 		departmentDao.update(dep2);
 		System.out.println("Update complete! dep 2 =" + dep2);
+		
+		System.out.println("=== TEST 4: deleteById =======");
+		System.out.println("Type the ID of the row you want to delete: ");
+		Integer id = sc.nextInt();
+		departmentDao.deleteById(id);
+		System.out.println("Deleting complete!");
 	}
 
 }
